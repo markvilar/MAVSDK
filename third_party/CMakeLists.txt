@@ -9,8 +9,8 @@ if (SUPERBUILD)
     set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} PARENT_SCOPE)
 
     build_target(mavlink)
-    build_target(jsoncpp)
-    build_target(tinyxml2)
+    build_target(jsoncpp)           # conan
+    build_target(tinyxml2)          # conan
 
     if(NOT IOS)
         build_target(zlib)
@@ -19,12 +19,12 @@ if (SUPERBUILD)
     build_target(curl)
 
     if(BUILD_MAVSDK_SERVER)
-        build_target(openssl)
+        build_target(openssl)       # conan
         build_target(cares)
         build_target(absl)
-        build_target(protobuf)
-        build_target(re2)
-        build_target(grpc)
+        build_target(protobuf)      # conan
+        build_target(re2)           # conan
+        build_target(grpc)          # conan
     endif()
 endif()
 

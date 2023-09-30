@@ -26,3 +26,11 @@ cmake-build-*
 # mavlink repo to generate mavlink-headers
 mavlink
 mavlink-headers
+
+# VIM swap files
+*.swp
+*.swa
+*.swo
+
+# CMake files
+**/CMakeUserPresets.json
